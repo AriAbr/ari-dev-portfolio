@@ -1,3 +1,7 @@
+module:
+  imports:
+  - path: github.com/gurusabarish/hugo-profile
+
 baseURL: "https://ariabramowitz.me/"
 languageCode: "en-us"
 title: "Ari Abramowitz"
