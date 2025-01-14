@@ -17,7 +17,7 @@ outputs:
 
 enableRobotsTXT: true
 # disqusShortname: your-disqus-shortname
-# googleAnalytics: G-MEASUREMENT_ID
+googleAnalytics: G-BL1C0YPK0D
 
 markup:
   goldmark:
