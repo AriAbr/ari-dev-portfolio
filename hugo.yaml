@@ -141,25 +141,25 @@ params:
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/ariabr/
 
-  # # About
-  # about:
-  #   enable: true
-  #   title: "About Me"
-  #   image: /images/headshot.jpg
-  #   content: |-
-  #     I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
+  # About
+  about:
+    enable: false
+    title: "About Me"
+    image: /images/headshot.jpg
+    content: |-
+      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
 
-  #     I am currently working on a project that will be used to help people find the best way to get around the city.
-  #   skills:
-  #     enable: true
-  #     title: "Here are a few technologies I've been working with recently:"
-  #     items:
-  #       - "HTML"
-  #       - "CSS"
-  #       - "JavaScript"
-  #       - "React"
-  #       - "Node"
-  #       - "Express"
+      I am currently working on a project that will be used to help people find the best way to get around the city.
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "HTML"
+        - "CSS"
+        - "JavaScript"
+        - "React"
+        - "Node"
+        - "Express"
 
   # Experience
   experience:
