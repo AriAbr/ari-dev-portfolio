@@ -166,65 +166,49 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Senior Software Developer"
-        company: "Facebook"
-        companyUrl: "https://example.com"
-        date: "Jan 2022 - present"
+      - job: "Senior Fullstack Developer"
+        company: "Centers Health Care"
+        companyUrl: "https://centershealthcare.com/"
+        date: "2020 - present"
         featuredLink:
-          enable: true
+          enable: false
           name: "View the project"
           url: "https://example.com"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+        content: |
+          - Developed software to streamline AR management for 80,000+ residents in 80 facilities throughout the US
+          - Improved efficiency of lab processing 2,000+ COVID tests per day by building an app to track sample history
+          - Approved and deployed code across 15+ projects
+          - Mentored team members on software development practices
+          - Improved code quality by performing initial and final code reviews for a team of 10 developers
+
+      - job: "Founder & Automation Developer"
+        company: "Rally4Israel"
+        companyUrl: "https://rally4israel.com"
+        date: "2024 - present"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        # info:
+        #   enable: true
+        #   content: I worked as a software developer for more than one year in Amazon.
+        content: |
+          - Developed and maintained a platform supporting Israel and the Jewish community, attracting 1.2k+ users
+          - Wrote and compiled rally materials into a centralized, user-friendly toolkit to aid event organizers
+          - Built a centralized rally calendar with automation scripts to sync events and post updates on social media
+          - Evaluated and implemented tools to balance functionality and user experience
 
       - job: "Software Developer"
-        company: "Amazon"
-        companyUrl: "https://example.com"
-        date: "Sep 2020 - Dec 2021"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        info:
-          enable: true
-          content: I worked as a software developer for more than one year in Amazon.
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "Junior Software Developer"
-        company: "Apple"
-        companyUrl: "https://example.com"
-        date: "Jan 2020 - Aug 2020"
+        company: "Taryag Analytics"
+        companyUrl: "http://taryaganalytics.com/"
+        date: "2019 - 2020"
         info:
           enable: false
         featuredLink:
           enable: true
-          url: "https://example.com"
+          url: "https://basehasefer.com/"
         content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "UI/UX Designer"
-        company: "Netflix"
-        companyUrl: "https://example.com"
-        date: "June 2017 - Nov 2019"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "Product Designer"
-        company: "Google"
-        companyUrl: "https://example.com"
-        date: "Feb 2016 - Mar 2017"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+          - Enabled 2020 Q1 beta launch by developing frontend and backend for six new text analysis features
+          - Improved comparative analysis capabilities by building a web-scraping ETL process to load new source data 
 
   # Education
   education:
