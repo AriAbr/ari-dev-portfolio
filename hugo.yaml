@@ -122,7 +122,7 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Ari Abramowitz."
-    subtitle: "I'm a fullstack developer"
+    subtitle: "I'm a software engineer"
     content: "I am passionate about solving complex problems, mentoring others, and bringing ideas to life. I have experience in both startup and agile environments, where I combine creative problem-solving with a focus on clean, efficient code."
     image: /images/headshot.jpg
     bottomImage:
