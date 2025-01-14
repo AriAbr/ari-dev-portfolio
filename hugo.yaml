@@ -216,42 +216,37 @@ params:
     # title: "Custom Name"
     index: false
     items:
-      - title: "Master of Business Administration"
+      - title: Software Engineering Bootcamp - Certificate of Completion
         school:
-          name: "University of California, Berkeley"
-          url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
+          name: "Bloc.io (now Chegg Skills)"
+          url: "https://www.chegg.com/skills/"
+        date: "2018 - 2019"
+        # GPA: "3.8 out of 5.0"
         content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
-        school:
-          name: "Massachusetts Institute of Technology"
-          url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
-        content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
+          - Mastered software engineering fundamentals by building 5 cloud-hosted web apps in an 8-month bootcamp
+        featuredLink:
+          enable: true
+          name: Certificate of Completion
+          url: "Ari_Abramowitz_Bloc_Certificate.pdf"
 
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
-      - title: "High School"
+      - title: "BA - Summa Cum Laude"
         school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
+          name: "Rutgers University"
+          url: "https://www.rutgers.edu/"
+        date: "2015 - 2018"
+        GPA: "3.94"
+        content: |-
+          - <b>Majors:</b> Philosophy, Jewish Studies; Minor: Religion
+          - <b>Semester Abroad:</b> Honors Program, The Hebrew University of Jerusalem
+          - <b>Honor societies:</b>
+              - <a href="https://www.pbk.org/">Phi Beta Kappa</a>
+              - <a href="https://www.nsls.org/">National Society of Leadership and Success</a>
+              - <a href="https://www.nscs.org/">National Society of Collegiate Scholars</a>
         featuredLink:
           enable: true
-          url: "https://example.com"
+          name: "Academic Record"
+          url: "Ari_Abramowitz_Rutgers_Transcript.pdf"
+
 
   # Achievements
   achievements:
