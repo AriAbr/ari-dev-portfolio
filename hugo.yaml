@@ -289,32 +289,22 @@ params:
           - icon: fab fa-github
             url: https://github.com/Rally4Israel/rally4israel-scripts
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
-        badges:
-          - "Django"
-          - "Bootstrap"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
+
+      - title: The Ezrat Nashim Database
+        content: A crowdsourced database of synagogues around the world to help users assess local synagogue options.
+        image: /images/eznashdb_homepage.png
         featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
+          name: The Ezrat Nashim Database
+          link: https://www.ezratnashim.com/
         badges:
-          - "Hugo"
-          - "Bootstrap"
+          - "Python / Django"
           - "Javascript"
+          - "HTMX"
+          - "React"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+            url: https://github.com/EzNashDB/eznashdb
 
   #Contact
   contact:
