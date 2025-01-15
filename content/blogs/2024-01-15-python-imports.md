@@ -9,8 +9,8 @@ draft = true
 What happens behind the scenes when you call `import` in python? Glad I asked. Here's how it works:
 
 1. <b>Check `sys.modules`:</b> Python first checks `sys.modules` to see if your module has already been loaded.
-   - `sys.modules` is a regular `dict` that caches modules. The keys are strings of the modules' names and the values are module objects (i.e. objects of type `ModuleType`)
-   - If your module is already in `sys.modules`, python uses that version. It adds the cached version to `globals()` and skips the steps below.
+   - `sys.modules` is a regular python `dict` that is used to cache modules. The keys are strings of the modules' names and the values are module objects (i.e. objects of type `ModuleType`)
+   - If your module is already in `sys.modules`, python adds the cached version to `globals()` and skips the steps below.
 2. <b>Create a module object:</b> If python does not find the module in `sys.modules`, it creates a new `ModuleType` object and loads the module's source code into it
 3. <b>Cache the module:</b> The new `module` objects is added to the `sys.modules` cache
 4. <b>Compile and execute:</b> Python compiles and _executes_ the source code from your module
@@ -20,7 +20,7 @@ Important Points:
 
 - The first time you import a module, python will execute all of the code in that module.
 - <i><b> Importing a module twice will not re-execute it</b></i>. Subsequent references to your module will still refer back to the cached module as it was originally imported.
-- <i><b>The `sys.modules` cache _is not file-specific_.</b></i> This means that the point above applies across files. If you import the same module in multiple files in your program, it will get cached _once_ in `sys.modules`. After that, the cached version will be used.
+- <i><b>The `sys.modules` cache _is not file-specific_.</b></i> This means that the previous point applies _across files_. If you import the same module in multiple files in your program, it will get cached _once_ in `sys.modules`. After that, the cached version will be used.
 
 Below is a bit of code to bring all of this home. We will:
 
