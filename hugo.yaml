@@ -293,7 +293,7 @@ params:
             url: https://github.com/Rally4Israel/rally4israel-scripts
 
       - title: The Ezrat Nashim Database
-        content: A crowdsourced database of synagogues around the world to help users assess local synagogue options.
+        content: A crowdsourced database of synagogues around the world to help users assess local options.
         image: /images/projects/eznashdb_homepage.png
         featured:
           name: View Project
