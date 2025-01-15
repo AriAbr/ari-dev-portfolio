@@ -280,7 +280,7 @@ params:
     items:
       - title: Rally4Israel
         content: A platform empowering pro-Israel and pro-Jewish rallies with impactful rally materials.
-        image: /images/rally4israel_homepage.png
+        image: /images/projects/rally4israel_homepage.png
         featured:
           name: Rally4Israel
           link: https://www.rally4israel.com/
@@ -296,7 +296,7 @@ params:
 
       - title: The Ezrat Nashim Database
         content: A crowdsourced database of synagogues around the world to help users assess local synagogue options.
-        image: /images/eznashdb_homepage.png
+        image: /images/projects/eznashdb_homepage.png
         featured:
           name: The Ezrat Nashim Database
           link: https://www.ezratnashim.com/
@@ -311,7 +311,7 @@ params:
 
       - title: Personal Portfolio
         content: This site :)
-        image: /images/portfolio_homepage.png
+        image: /images/projects/portfolio_homepage.png
         badges:
           - "Hugo"
         links:
