@@ -239,7 +239,7 @@ params:
         date: "2015 - 2018"
         GPA: "3.94"
         content: |-
-          - <b>Majors:</b> Philosophy, Jewish Studies; Minor: Religion
+          - <b>Majors:</b> Philosophy, Jewish Studies; <b>Minor:</b> Religion
           - <b>Semester Abroad:</b> Honors Program, The Hebrew University of Jerusalem
           - <b>Honor societies:</b>
               - <a href="https://www.pbk.org/">Phi Beta Kappa</a>
