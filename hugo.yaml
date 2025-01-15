@@ -308,7 +308,7 @@ params:
             url: https://github.com/EzNashDB/eznashdb
 
       - title: 3D Tanach Family Tree
-        content: 3D visualization of the family relations between all figures in the Hebrew Bible, built in partnership with the Taryag Analytics team. Earned Honorable Mention in the 2020 Powered by Sefaria Contest.
+        content: A 3D visualization of the family relations between all figures in the Hebrew Bible, built in partnership with the Taryag Analytics team. Earned Honorable Mention in the 2020 Powered by Sefaria Contest.
         image: /images/projects/3d_tanach_family_tree.jpg
         featured:
           name: View Project
