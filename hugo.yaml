@@ -25,6 +25,9 @@ markup:
       unsafe: true
   highlight:
     style: "native"
+    # style: "solarized-light"
+    # style: "solarized-dark"
+    # style: "catppuccin-latte"
 
 Menus:
   main:
