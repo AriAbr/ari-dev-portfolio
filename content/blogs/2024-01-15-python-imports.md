@@ -40,7 +40,7 @@ print("======== Running main.py ======== ")
 print("Importing module1")
 import module1
 print("Deleting module1")
-del globals()["module1"] # Deletes from globals, but not sys.modules
+del globals()["module1"] # Deletes from globals(), but not from sys.modules
 try:
     print("Accessing module 1 after deleting from globals()")
     # This will cause an exception. module1 is still cached in `sys.modules`,
@@ -49,7 +49,8 @@ try:
 except NameError as e:
     print("NameError", e)
 print("Re-importing module1")
-# Adds the cached version of module1 back to globals(), without re-executing the module
+# Adds the cached version of module1 back to globals(), without
+# re-executing the module
 import module1
 print("Accessing module 1 after re-importing from globals()")
 module1
