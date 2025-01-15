@@ -282,7 +282,7 @@ params:
         content: A platform empowering pro-Israel and pro-Jewish rallies with impactful rally materials.
         image: /images/projects/rally4israel_homepage.png
         featured:
-          name: Rally4Israel
+          name: View Project
           link: https://www.rally4israel.com/
         badges:
           - "Python"
@@ -292,13 +292,11 @@ params:
           - icon: fab fa-github
             url: https://github.com/Rally4Israel/rally4israel-scripts
 
-
-
       - title: The Ezrat Nashim Database
         content: A crowdsourced database of synagogues around the world to help users assess local synagogue options.
         image: /images/projects/eznashdb_homepage.png
         featured:
-          name: The Ezrat Nashim Database
+          name: View Project
           link: https://www.ezratnashim.com/
         badges:
           - "Python / Django"
@@ -308,6 +306,19 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/EzNashDB/eznashdb
+
+      - title: 3D Tanach Family Tree
+        content: 3D visualization of the family relations between all figures in the Hebrew Bible, built in partnership with the Taryag Analytics team. Earned Honorable Mention in the 2020 Powered by Sefaria Contest.
+        image: /images/projects/3d_tanach_family_tree.jpg
+        featured:
+          name: View Project
+          link: https://www.basehasefer.com/#/3Dtree?language=he&fullscreen=T
+        badges:
+          - "React"
+          - "Java"
+        links:
+          - icon: fa fa-newspaper
+            url: https://www.sefaria.org/powered-by-sefaria-contest-2020
 
       - title: Personal Portfolio
         content: This site :)
