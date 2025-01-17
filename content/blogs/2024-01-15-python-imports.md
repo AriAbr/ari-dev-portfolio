@@ -1,5 +1,5 @@
 +++
-title = 'Python Imports: Behind the scenes'
+title = 'Python Imports and Module Caching'
 date = 2025-01-15T19:05:18+02:00
 draft = true
 +++
@@ -16,11 +16,7 @@ What happens behind the scenes when you call `import` in python? Glad I asked. H
 4. <b>Compile and execute:</b> Python compiles and _executes_ the source code from your module
 5. <b>Add to `globals()`:</b> Python and adds your module to `globals()`, making it available for use going forward.
 
-Important Points:
-
-- The first time you import a module, python will execute all of the code in that module.
-- <i><b> Importing a module twice will not re-execute it</b></i>. Subsequent references to your module will still refer back to the cached module as it was originally imported.
-- <i><b>The `sys.modules` cache _is not file-specific_.</b></i> This means that the previous point applies _across files_. If you import the same module in multiple files in your program, it will get cached _once_ in `sys.modules`. After that, the cached version will be used.
+<b>Key Point</b>: It is often said that importing a python module will execute all of the code in the module. This is only partly true. <b>Python only executes a module the first time it is imported, then caches it in `sys.modules`.</b> Subsequent `import` statements throughout your code, even in different files, will refer back to the cached version and will not execute the module again.
 
 Below is a bit of code to bring all of this home. We will:
 
@@ -33,7 +29,6 @@ Below is a bit of code to bring all of this home. We will:
 ```python
 # module1.py
 print("Running module1")
-
 
 # main.py
 print("======== Running main.py ======== ")
