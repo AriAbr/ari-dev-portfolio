@@ -6,7 +6,7 @@ draft = false
 
 <i><small>This is another post based on [Dr. Fred Baptiste' Python 3: Deep Dive](https://www.udemy.com/course/python-3-deep-dive-part-1/) series. For more, head over to Udemy.</small></i>
 
-What happens behind the scenes when you call `import` in python? Glad I asked. Here's how it works:
+What happens behind the scenes in a python `import` statement? Glad I asked. Here's how it works:
 
 1. <b>Check `sys.modules`:</b> Python first checks `sys.modules` to see if your module has already been loaded.
    - `sys.modules` is a regular python `dict` that is used to cache modules. The keys are strings of the modules' names and the values are module objects (i.e. objects of type `ModuleType`)
