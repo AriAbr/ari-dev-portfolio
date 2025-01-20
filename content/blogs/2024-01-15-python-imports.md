@@ -16,7 +16,7 @@ What happens behind the scenes in a python `import` statement? Glad I asked. Her
 4. <b>Compile and execute:</b> Python compiles and _executes_ the source code from your module
 5. <b>Add to `globals()`:</b> Python and adds your module to `globals()`, making it available for use going forward.
 
-<b>Key Point</b>: It is often said that importing a python module will execute all of the code in the module. This is only partly true. <b>Python only executes a module the first time it is imported, then caches it in `sys.modules`.</b> Subsequent `import` statements throughout your code, even in different files, will refer back to the cached version and will not execute the module again.
+<b>Key Point</b>: It is often said that importing a python module will execute all of the code in the module. That is only partly true. <b>Python only executes a module the first time it is imported, then caches it in `sys.modules`.</b> Subsequent `import` statements throughout your code, even in different files, will refer back to the cached version and will not execute the module again.
 
 Below is a bit of code to bring all of this home. We will:
 
