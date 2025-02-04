@@ -56,7 +56,7 @@ Menus:
 
 params:
   title: "Ari Abramowitz's Portfolio"
-  # description: Text about my cool site
+  description: ariabramowitz.me
   # staticPath: ""  # The path to serve the static files from
   favicon: "/code-solid.svg"
 
