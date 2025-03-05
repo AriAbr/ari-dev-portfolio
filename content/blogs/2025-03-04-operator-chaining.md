@@ -10,7 +10,17 @@ A colleague of mine recently posted the following on a Teams channel which we’
 >
 > This is because the [Python] interpreter reads this as `"a" in ("abc" is True)`, which is the same as `"a" in False`.
 
-I was about to post [a link giving more details about operator precedence in Python](https://www.geeksforgeeks.org/precedence-and-associativity-of-operators-in-python/), until I looked more closely at the explanation there and noticed something odd: _`in` and `is` have the same precedence_ and have left-to-right associativity (they get processed left-to-right). Following that, I would expect the example above to evaluate to `True`:
+The first problem with this, which I did not catch until later, is that `"a" in False` does not in fact evaluate to `False`. It raises an exception because `False` is not iterable so the `in` operator does not work:
+
+```python
+"a" in False
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: argument of type 'bool' is not iterable
+```
+
+Having overlooked that issue, I was about to respond with [a link giving more details about operator precedence in Python](https://www.geeksforgeeks.org/precedence-and-associativity-of-operators-in-python/). However, after looking more closely at the explanation there, I noticed something else: _`in` and `is` have the same precedence_ and have left-to-right associativity (they get processed left-to-right). Following that, I would have expected the example to evaluate to `True`:
 
 ```python
 "a" in "abc" is True # -> ("a" in "abc") is True
@@ -34,7 +44,9 @@ Something wasn't lining up, so I decided to do some more digging. I started with
 >
 > ChatGPT: Oooohhh. Riiiighht. It’s _operator chaining_.
 
-That wasn't the _most_ confidence-building conversation I’ve had in my life, so I went to Google next. I found a Stack Overflow post with a similar question and the same explanation that ChatGPT eventually gave: https://stackoverflow.com/questions/31487806/a-in-abc-true-evaluates-to-false
+This was a good reminder that ChatGPT is still not a Python expert. I would have expected it to catch both of the points I mentioned above, explain the incorrect assumptions, and then give the correct explanation. Instead, it played along with the provided explanation and only corrected itself after two rounds of prodding. Oh well.
+
+Needless to say, my conversation with ChatGPT was not the _most_ confidence-inspiring one I’ve had in my life, so I went to Google next. I found a Stack Overflow post with a similar question and the same explanation that ChatGPT eventually gave: https://stackoverflow.com/questions/31487806/a-in-abc-true-evaluates-to-false
 
 Essentially, because of "operator chaining" the example above, `"a" in "abc" is True`, translates to the following:
 
@@ -52,7 +64,8 @@ I had known about this rule generally, but did not realize it applied in a case 
 
 **Lessons learned:**
 
-1. If two or more comparison operators (`<`, `<=`, `>`, `>=`, `==`, `!=`, `is`, `is not`, `in`, `not in`) are "chained" together, Python inserts `and`s between them to interpret what's going on.
+1. If two or more comparison operators are "chained" together, Python inserts `and`s between them to interpret what's going on.
+    - "Comparison operators" include: `<`, `<=`, `>`, `>=`, `==`, `!=`, `is`, `is not`, `in`, `not in`
 2. ChatGPT is not a Python expert... yet.
 
 For more on this, check out these links:
