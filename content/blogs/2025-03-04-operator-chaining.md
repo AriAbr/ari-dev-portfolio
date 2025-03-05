@@ -20,7 +20,7 @@ Traceback (most recent call last):
 TypeError: argument of type 'bool' is not iterable
 ```
 
-Having overlooked that issue, I was about to respond with [a link giving more details about operator precedence in Python](https://www.geeksforgeeks.org/precedence-and-associativity-of-operators-in-python/). However, after looking more closely at the explanation there, I noticed something else: _`in` and `is` have the same precedence_ and have left-to-right associativity (they get processed left-to-right). Following that, I would have expected the example to evaluate to `True`:
+Having overlooked that issue, I was about to respond with [this link](https://www.geeksforgeeks.org/precedence-and-associativity-of-operators-in-python/) giving more details about operator precedence in Python. However, after looking more closely at the explanation there, I noticed something else: _`in` and `is` have the same precedence_ and have left-to-right associativity (they get processed left-to-right). Following that, I would have expected the example to evaluate to `True`:
 
 ```python
 "a" in "abc" is True # -> ("a" in "abc") is True
