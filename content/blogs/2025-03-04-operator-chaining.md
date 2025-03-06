@@ -65,7 +65,7 @@ I had known about this rule generally, but did not realize it applied in a case 
 **Lessons learned:**
 
 1. If two or more comparison operators are "chained" together, Python inserts `and`s between them to interpret what's going on.
-    - "Comparison operators" include: `<`, `<=`, `>`, `>=`, `==`, `!=`, `is`, `is not`, `in`, `not in`
+   - "Comparison operators" include: `<`, `<=`, `>`, `>=`, `==`, `!=`, `is`, `is not`, `in`, `not in`
 2. ChatGPT is not a Python expert... yet.
 
 For more on this, check out these links:
