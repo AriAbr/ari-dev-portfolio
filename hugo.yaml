@@ -33,8 +33,8 @@ Menus:
   main:
     - identifier: blog
       name: Blog
-      title: Blog posts
-      url: /blogs
+      title: Blog
+      url: https://blog.ariabramowitz.me/
       weight: 1
     #Dropdown menu
     # - identifier: dropdown
