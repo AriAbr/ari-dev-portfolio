@@ -150,6 +150,8 @@ params:
           url: https://github.com/AriAbr
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/ariabr/
+        - icon: fa fa-chevron-down
+          url: "#experience"
 
   # About
   about:
