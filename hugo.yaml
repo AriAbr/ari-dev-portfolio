@@ -133,12 +133,17 @@ params:
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
-    button:
-      enable: true
-      name: "Resume"
-      url: https://ariabramowitz.me/Ari_Abramowitz_Resume.pdf
-      download: true
-      newPage: true
+    buttons:
+      - enable: true
+        name: "Resume"
+        url: https://ariabramowitz.me/Ari_Abramowitz_Resume.pdf
+        download: true
+        newPage: true
+      - enable: true
+        name: "Blog"
+        url: https://blog.ariabramowitz.me/
+        download: true
+        newPage: true
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github

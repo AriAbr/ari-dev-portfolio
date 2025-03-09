@@ -16,16 +16,21 @@
                     {{ .Site.Params.hero.content | markdownify }}
                 </p>
                 <div class="row">
-                    <div class="col-auto h-100">
-                        {{ if .Site.Params.hero.button.enable }}
-                        <a href="{{ .Site.Params.hero.button.url }}" class="btn" {{ cond .Site.Params.hero.button.download "download" "" }}
-			  {{ if .Site.Params.hero.button.newPage | default true }}
-                          target="_blank"
-                          {{ end }}>
-                            {{ .Site.Params.hero.button.name }}
+                    {{ range .Site.Params.hero.buttons }}
+                    <div class="col-auto h-10.Site0">
+                        {{ if .enable }}
+                        <a href="{{ .url }}"
+                            class="btn"
+                            {{ cond .download "download" "" }}
+			                {{ if .newPage | default true }}
+                                target="_blank"
+                            {{ end }}
+                        >
+                            {{ .name }}
                         </a>
                         {{ end }}
                     </div>
+                    {{ end }}
                     <div class="col-auto px-0 h-100">
                         {{- partial "sections/hero/social.html" . -}}
                     </div>
