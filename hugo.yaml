@@ -145,9 +145,6 @@ params:
           url: https://github.com/AriAbr
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/ariabr/
-        - icon: fa fa-rss
-          url: https://feedly.com/i/subscription/feed/https://ariabramowitz.me/blogs/index.xml
-
 
   # About
   about:
